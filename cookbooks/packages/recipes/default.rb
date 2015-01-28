@@ -18,11 +18,12 @@ node[:packages].each do |package|
     action :install 
   end
 
-  Chef::Log.info "Installing appropriate version of Node"
-  package "net-libs/nodejs" do
-    version "0.10.28"
-    action :upgrade
-  end
-  
 end
+
+Chef::Log.info "Installing appropriate version of Node"
+package "net-libs/nodejs" do
+  version "0.10.28"
+  action :upgrade
+end
+
 
