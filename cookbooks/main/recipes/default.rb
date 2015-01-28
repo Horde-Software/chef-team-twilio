@@ -84,7 +84,7 @@ require_recipe "packages"
 
 #uncomment to set environment variables in passenger or unicorn
 # Set environment variables as specified in cookbooks/env_vars/attributes/env_vars.rb
-#include_recipe "env_vars"
+include_recipe "env_vars"
 
 
 #uncomment to include the mysql_replication_check recipe
